@@ -1,0 +1,47 @@
+Name,Type,Description
+Dataset_Name,TEXT,Descriptive name for DATASET_ID.
+Dataset_Id,TEXT,"Unique ID for a given dataset (13 total for 2019). Format = agency abbreviation and dataset number (e.g., DAR_01, ESD_02)."
+Organization,TEXT,"Name of organization / office / project that owns and manages a given dataset. A dataset can be owned/managed by +1 organizations (e.g., DAR_Kona, DAR_Kauai, DAR_Maui)."
+Observer,TEXT,Initials of person who made this particular observation.
+Island,TEXT,Name of Hawaiian island/atoll.
+Region,TEXT,Name of island group (i.e. NWHI vs. MHI). MHI = main Hawaiian Islands; NWHI = Northwestern Hawaiian Islands
+Sector,TEXT,"Name of sub-island zone (e.g., North Hilo, South Kohala). Applicable only to islands in the MHI (not required)."
+Survey_Name,TEXT,Unique name for survey conducted (unique for each record in the observations data).
+Survey_ID_InternalToYourProject,TEXT,Alternate survey identification internal to organization (optional). Applies to observations in the MHI only.
+Depth_ft,NUMBER,"Average depth in feet for the observation or survey site. Depth ranges from 2-98 ft. If null, refer to DEPTH_BIN. For HIMB surveys, the exact depth for each survey was not recorded and instead was estimated at 6.5 feet."
+Depth_bin,TEXT,"Depth bin was retroactively determined if the observer did not record DEPTH_FT during a survey (e.g., DAR Maui surveys). Shallow: 0–6 meters; Mid: >6–18 meters; Deep: >18 meters"
+Latitude_DD,NUMBER,"Latitude of observation in decimal degrees (19-28.5 degrees). Assume centroid of observation area unless stated otherwise in COMMENTS_OBSERVATION (e.g., transect start, transect stop, approximated from google maps, etc.). WGS84 datum assumed unless stated otherwise."
+Longitude_DD,NUMBER,"Longitude of observation in decimal degrees (-178.4 to -155 degrees). Assume centroid of observation area unless stated otherwise in COMMENTS_OBSERVATION (e.g., transect start, transect stop, approximated from google maps, etc.). WGS84 datum assumed unless stated otherwise."
+ObservationDate,DATE,Local date observation was made (m/d/yyyy; 8/27/2019 to 11/5/2019).
+AreaSurveyed_m2,NUMBER,Area in square meters surveyed for the observation; not the total area for the complete survey or dataset (78.5 - 393 m^2).
+LiveCoralCover,NUMBER,"Percent of living coral cover within the area of this observation (0-100%). If NULL, see LiveCoralCover_Bin."
+LiveCoralCover_Bin,NUMBER,"Percent living coral cover within the area of this observation to the nearest bin (Bin 0 = 0%, 1= 1-10%, 2 = 11-30%, 3 = 31-50%, 4 = 51-75%, 5= 76-100%). If NULL, see LiveCoralCover."
+CoralBleached,NUMBER,"Percent of living coral cover that was partially or fully bleached (0-100%; e.g. 5% bleached cover). If NULL, see CoralBleached_Bin."
+CoralBleached_Bin,NUMBER,"Percent living coral cover that was partially or fully bleached to the nearest bin (Bin 0 = 0%, 1= 1-10%, 2 = 11-30%, 3 = 31-50%, 4 = 51-75%, 5= 76-100%). If NULL, see CoralBleached."
+BleachingSeverity,NUMBER,"Average severity of bleaching (0 = no bleaching, 1 = slight paling, 2 = significant loss of pigmentation, 3 = almost or completely stark white, 4 = recently dead from bleaching). If recorded, CoralBleached is also recorded. Not required."
+Taxon1_Code,TEXT,"Taxon (to species if possible) code for dominant Taxon 1 (optional). See HSBC_2019_TaxaList.csv for taxon scientific name. Some organizations did not record taxa level metrics, and only recorded the overall coral cover and bleaching metrics at the site level."
+Taxon1_Cover,NUMBER,Percent of living cover of Taxon 1 (0-100%).
+Taxon1_Bleached,NUMBER,Percent of Taxon 1 that was partially or fully bleached (0-100%).
+Taxon1_Ave_Sev,NUMBER,Average bleaching severity of Taxon 1 (0-4).
+Taxon1_Max_Sev,NUMBER,Maximum bleaching severity of Taxon 1 (0-4).
+Taxon2_Code,TEXT,"Taxon (to species if possible) code for dominant Taxon 2 (optional). See HSBC_2019_TaxaList.csv for taxon scientific name. Some organizations did not record taxa level metrics, and only recorded the overall coral cover and bleaching metrics at the site level."
+Taxon2_Cover,NUMBER,Percent of living cover of Taxon 2 (0-100%).
+Taxon2_Bleached,NUMBER,Percent of Taxon 2 that was partially or fully bleached (0-100%).
+Taxon2_Ave_Sev,NUMBER,Average bleaching severity of Taxon 2 (0-4).
+Taxon2_Max_Sev,NUMBER,Maximum bleaching severity of Taxon 2 (0-4).
+Taxon3_Code,TEXT,"Taxon (to species if possible) code for dominant Taxon 3 (optional). See HSBC_2019_TaxaList.csv for taxon scientific name. Some organizations did not record taxa level metrics, and only recorded the overall coral cover and bleaching metrics at the site level."
+Taxon3_Cover,NUMBER,Percent of living cover of Taxon 3 (0-100%).
+Taxon3_Bleached,NUMBER,Percent of Taxon 3 that was partially or fully bleached (0-100%).
+Taxon3_Ave_Sev,NUMBER,Average bleaching severity of Taxon 3 (0-4).
+Taxon3_Max_Sev,NUMBER,Maximum bleaching severity of Taxon 3 (0-4).
+Taxon4_Code,TEXT,"Taxon (to species if possible) code for dominant Taxon 4 (optional). See HSBC_2019_TaxaList.csv for taxon scientific name. Some organizations did not record taxa level metrics, and only recorded the overall coral cover and bleaching metrics at the site level."
+Taxon4_Cover,NUMBER,Percent of living cover of Taxon 4 (0-100%).
+Taxon4_Bleached,NUMBER,Percent of Taxon 4 that was partially or fully bleached (0-100%).
+Taxon4_Ave_Sev,NUMBER,Average bleaching severity of Taxon 4 (0-4).
+Taxon4_Max_Sev,NUMBER,Maximum bleaching severity of Taxon 4 (0-4).
+Taxon5_Code,TEXT,"Taxon (to species if possible) code for dominant Taxon 5 (optional). See HSBC_2019_TaxaList.csv for taxon scientific name. Some organizations did not record taxa level metrics, and only recorded the overall coral cover and bleaching metrics at the site level."
+Taxon5_Cover,NUMBER,Percent of living cover of Taxon 5 (0-100%).
+Taxon5_Bleached,NUMBER,Percent of Taxon 5 that was partially or fully bleached (0-100%).
+Taxon5_Ave_Sev,NUMBER,Average bleaching severity of Taxon 5 (0-4).
+Taxon5_Max_Sev,NUMBER,Maximum bleaching severity of Taxon 5 (0-4).
+Comments_Observation,TEXT,Additional comments or observations.

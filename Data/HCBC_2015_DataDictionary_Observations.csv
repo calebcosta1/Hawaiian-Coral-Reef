@@ -1,0 +1,33 @@
+Dataset_Name,Name for the dataset referenced within a Hawaii Coral Bleaching Collaborative member organization.
+Organization_Name,Name of the Hawaii Coral Bleaching Collaborative member organization.
+Observer_Name,"Name of the observer, or group (if observer name not recorded) responsible for recording the observation in the field."
+Island_Name,Name of the island on which the observation occurred.
+Location_Name,Name of the region in which the observation occurred. Blank for surveys where region was not recorded.
+Site_Name,Name of the site in which the observation occurred.
+Depth_ft,Bathymetric depth at the site of observation in feet.
+Depth_m,Bathymetric depth at the site of observation in meters.
+DepthBin_5m,"Bathymetric depth at the site of observation in meters, binned in [0-5], (5-10], (10-15]."
+Longitude_DD,"Longitude of observation in decimal degrees, -180:180, WGS84, at commerical grade accuracy (+/- ~ 10m)."
+Latitude_DD,"Latitude of observation in decimal degrees, -90:90, WGS84, at commerical grade accuracy (+/- ~ 10m)."
+ObservationDate,"Date of Observation, YYYY/MM/DD"
+AreaSurveyed_m2,"Area of reef surveyed for this specific observation, varies both by method and by observation."
+PercentLiveCoralCover,Percentage of reef area surveyed covered with live coral.
+PctCoralUnbleached,Percentage of coral area that shows no paling or bleaching.
+PctCoralPartialBleached,"Percentage of coral area that shows paling, or mottled bleaching but not full loss of color."
+PctCoralFullyBleached,Percentage of coral area that show full loss of color.
+PctAffected,Sum of PctCoralPartialBleached and PctCoralFullyBleached.
+UploadDate,Date that dataset was uploaded to shared Hawaii Coral Bleaching Collaborative dataset
+InstitutionDataOwner,Institution that initially generated data.
+Dataset_Description,Description of specific dataset within a Hawaii Coral Bleaching Collaborative member organization. 
+Method_Name_PercentLiveCoralCover,Name of survey method used for estimating Percent Live Coral Cover.
+Method_Name_Bleaching,Name of survey method used for estimating Bleaching.
+Method_Name_AreaSurveyed,Name of survey method used for generating Area Surveyed.
+SupplierOfDataset,Person or program who supplied dataset from a Hawaii Coral Bleaching Collaborative member organization.
+OwnerOfRecordForDataset,Person or program who acts as owner of record for a dataset from a Hawaii Coral Bleaching Collaborative member organization.
+DataAuthors,"Contributors to dataset, cited as Authors."
+DataManager,Person named as data manager for a dataset from a Hawaii Coral Bleaching Collaborative member organization.
+Method_Name,Name of overall survey method for this dataset.
+Method.Purpose,Target metrics for overall survey method for this dataset.
+RasterAddress_1km,"Unique ID for 1 km Cell, to cross-walk to HCBC_2015_ClusterDataForArchive_Small"
+Longitude_RAS_1km,Centroid Longitude of 1 km raster grid cell for that cluster
+Latitude_RAS_1km,Centroid Latitude of 1 km raster grid cell forthat cluster
